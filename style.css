@@ -3,7 +3,7 @@
     --dark-blue:#0d4f9a;
     --light-dark-blue:#0B4F9A;
     --medium-blue:#3c7aae;
-    --light-grey:#efefef;
+    --light-grey:#FDFDFE;
     --parrot:#2BB24C;
 }
 
@@ -41,4 +41,38 @@
 .bd-right-green{
     border-right-color:var(--parrot) ;
     border-width: 3px;
+}
+
+.list-group-item {
+    background-color: transparent; 
+    border: none; 
+    list-style-type: disc !important;
+
+  }
+  .list-group {
+    padding-left: 20px; 
+  }
+
+  .custom-embed {
+    width: 100%; 
+    height: 500px; 
+    margin: auto; 
+  }
+  .custom-embed-bottom {
+    width: 80%; 
+    height: 400px; 
+    margin: auto; 
+  }
+
+
+  .reviews{
+    position: fixed;
+    background-color: var(--blue);
+    top: 312px;
+    transform: rotate(-90deg);
+    margin: 0;
+    font-weight: 100;
+    width: 90px;
+    height: 30px;
+    z-index:100;
 }
