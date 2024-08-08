@@ -199,14 +199,14 @@
     
 }
 .tab-one-time-purchase{
-    width: 370px;
+    width: 350px;
     height: 50px;
     font-size: 18px;
     border: 2px solid var(--light-dark-blue);  
 }
 
 .subscribe-tab{
-    width: 370px;
+    width: 350px;
     height: 50px;
     color: var(--light-dark-blue );
     font-size: 18px;
