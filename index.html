@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Biotrust</title>
+        <title>Ageless Multi-Collagen® Protein Powder | BioTRUST</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <body class="main">
+        <script>
+
+            function displayImage(imageId) {
+               const imageSrc = document.getElementById(imageId).src;
+               const displayDiv = document.getElementById('image-selected');
+                 displayDiv.innerHTML = `<img src="${imageSrc}" alt="Displayed Image" style="max-width: 100%;">`;
+           }
+             window.onload = function() {
+              displayImage('image6');
+           }
+        </script>
+</head>
+
+<body class="main">
 
     <div class="container-fluid ps-0 pe-0">
-        <nav class="breadcrumb mt-3 ms-3" style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);" aria-label="breadcrumb">
-                <a class="breadcrumb-item nav-link" href="index.html">HOME</a></li>
-                <a class= "breadcrumb-item nav-link" href="#">COLLAGEN PROTEIN</a></li>
+        <nav class="d-none d-lg-flex breadcrumb mt-3 ms-3" style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);" aria-label="breadcrumb">
+                <a class="breadcrumb-item nav-link nav-w" href="index.html">HOME</a>
+                <a class= "breadcrumb-item nav-link nav-w"  href="#">COLLAGEN PROTEIN</a>
         </nav>
         
         <div class="d-flex justify-content-center align-items-center reviews text-white text-center"> ★ REVIEWS </div>
@@ -22,53 +34,66 @@
 
         <div class="row">
 
-            <div class="col-1">
-                
+                        <div class="d-flex flex-column justify-content-center align-items-center col-lg-1 col-md-6 col-xs-12">
+                        
+                                    <div class="d-flex flex-column d-lg-none justify-content-center align-items-center">
+
+                                        <h1 class="ageless-head text-center">AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h1>
+                                        <img class="review-star" src="assets/images/featured_review_stars_small.webp"><span><a class="ageless-review-link text-decoration-none" href="#">3380 Reviews</a></span>
+                                    </div>
+                                        
+
                                    <!-- vertical Carousel -->
-                                   <div id="veritical-demo" class="carousel vertical-corousal-container slide" data-bs-ride="carousel">
+                                   <div id="veritical-demo" class="carousel vertical-corousal-container slide" >
                         
                                     <!-- The slideshow/carousel -->
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (1).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (2).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (3).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (4).jpg" alt="Los Angeles" class="d-block w-100">
+                                                <img id="image1" class="vertical-corousal-img" src="assets/images/buy-1-1571245639778.webp" alt="Los Angeles" onclick="displayImage('image1')" class="d-block">
+                                                <img id="image2" class="vertical-corousal-img" src="assets/images/buy-2-1576776979825.webp" alt="Los Angeles" onclick="displayImage('image2')" class="d-block">
+                                                <img id="image3" class="vertical-corousal-img" src="assets/images/buy-3-1571245639780.webp" alt="Los Angeles" onclick="displayImage('image3')" class="d-block">
+                                                <img id="image4" class="vertical-corousal-img" src="assets/images/buy-6-1571245639782.webp" alt="Los Angeles" onclick="displayImage('image4')" class="d-block">
                 
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (5).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (6).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (7).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (8).jpg" alt="Los Angeles" class="d-block w-100">
+                                                <img id="image5" class="vertical-corousal-img" src="assets/images/collagen-unflavored-5.17.21_1024x1024@2x (1).webp" alt="Los Angeles" onclick="displayImage('image5')" class="d-block ">
+                                                <img id="image6" class="vertical-corousal-img" src="assets/images/collagen-unflavored-5.17.21_1024x1024@2x.webp" alt="Los Angeles" onclick="displayImage('image6')" class="d-block">
+                                                <img id="image7" class="vertical-corousal-img" src="assets/images/collagen-unf-sq_1024x1024@2x.webp" alt="Los Angeles" onclick="displayImage('image7')" class="d-block">
+                                                <img id="image8" class="vertical-corousal-img" src="assets/images/collagen-unf-sq_40x40@2x.png" alt="Los Angeles" onclick="displayImage('image8')" class="d-block">
                                             </div>
-                                            <div class="carousel-item">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (9).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (10).jpg" alt="Los Angeles" class="d-block w-100">
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (11).jpg" alt="Los Angeles" class="d-block w-100">  
-                                                <img class="vertical-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
-                                            </div>
+                                         
+                                            
                                         </div>
-                                    <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#veritical-demo" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#veritical-demo" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                    </button>
-                                </div>
-                                          
+
+                                            <!-- Left and right controls/icons -->
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#veritical-demo" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#veritical-demo" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                            </button>
+                                    </div>
+                                    
+                                    
+                                    <div class="watch-btn-section d-flex d-lg-none">
+                                        <button  id="watch-product-videos" class="watch-btn rounded" type="button">WATCH PRODUCT VIDEOS</button>
+                                    </div>
 
 
-            </div>
+                                    <div class="d-lg-none d-flex" >
+
+                                        <img class="bottom-banner-img" src="assets/images/bottom-banner.png" alt="img">
+                    
+                                    </div>
+
+
+                        </div>
 
 
 
 
 
-
-
-            <div class="col-5">
+            <div class="col-lg-5 d-lg-flex flex-lg-column d-none  justify-content-center align-items-center col-6">
 
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <h1 class="ageless-head text-center">AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h1>
@@ -78,9 +103,20 @@
                     </div>
                 </div>
 
-              
+                <!--------------------------------- Image selecetd and magnifying--------------------------->
+                <div class="d-flex  justify-content-center align-items-center" id="image-selected">
 
-                
+
+                </div>
+
+
+
+
+                <div >
+
+                    <img class="bottom-banner-img" src="assets/images/bottom-banner.png" alt="img">
+
+                </div>
 
 
             </div>
@@ -95,22 +131,29 @@
 
 
 
-            <div class="d-flex flex-column align-items-center text-center col-6">
+            <div class="d-flex flex-column align-items-center text-center col-lg-6 col-md-6 col-xs-12">
                     <h1 class="package-head">Choose Your Package</h1>
                     <p>Select your money-saving option below:</p>
                 
                 
-                    <div id="accordion" class="mb-5">
-                        <div class="d-flex flex-row gap-3">
-                            <a class="d-flex align-items-center justify-content-center tab-one-time-purchase btn text-white btn-bg-color"  data-bs-toggle="collapse" href="#display-one-time-purchase" >One Time Purchase </a></li>
-                            <a class="d-flex  btn align-items-center justify-content-centerborder border-2 subscribe-tab " data-bs-toggle="collapse" href="#display-subscribe">Subscribe & Save 40%</a></li>
+                        <div class="d-flex flex-row gap-3" >
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active tab-one-time-purchase btn-bg-color " id="one-time-purchase-tab" data-bs-toggle="pill" data-bs-target="#display-one-time-purchase" type="button" role="tab" aria-controls="display-one-time-purchase" aria-selected="true">One Time Purchase </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link subscribe-tab"  id="subscribe-tab" data-bs-toggle="pill" data-bs-target="#display-subscribe" type="button" role="tab" aria-controls="display-subscribe" aria-selected="false">Subscribe & Save 40%</button>
+                                </li>
+                            </ul>
                         </div>
 
-                        <div id="display-one-time-purchase" class="collapse show " data-bs-parent="#accordion">
+                        <div id="display-one-time-purchase" class="collapse show ">
 
-                            <div class="d-flex flex-row justify-content-center  mt-5 align-items-center">
+                            <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-xs-column   justify-content-center  mt-5 align-items-center">
 
-                                <!-- card 1 -->
+
+                                <!------------------------------ card 1 ------------------------------------------------>
+
 
                                 <div class="card border-1 text-center">
                                     <div class="card-body d-block">
@@ -121,7 +164,7 @@
                                   </div>
                     
                     
-                                  <!-- card 2 -->
+                                  <!------------------------------ card 2 -->
 
                                   <div class="card card-popular border-4 text-center">
                                     <div class="d-flex justify-content-center align-items-center card-head-popular card-head-bg-color text-white">
@@ -154,9 +197,9 @@
                         </div>
 
 
-                           <div id="display-subscribe" class="collapse" data-bs-parent="#accordion">
-                                <div class="d-flex flex-row justify-content-center align-items-center">
-                                    <div class="d-flex flex-row justify-content-center  mt-5 align-items-center">
+                           <div id="display-subscribe" class="collapse flex-lg-row flex-md-column flex-xs-column  " data-bs-parent="#accordion">
+                                <div class="d-flex flex-lg-row flex-md-column flex-xs-column  justify-content-center align-items-center">
+                                    <div class="d-flex flex-lg-row flex-md-column flex-xs-column   justify-content-center  mt-5 align-items-center">
 
                                         <!-- card 4 -->
 
@@ -224,87 +267,62 @@
                                     </div>  
                                 </div>
                             </div>
-                       </div>
-
-                  
-                   </div>
-           </div>
 
 
+                      
+                      
+                    <h1 class="horizontal-corousal-head mt-5">PHOTOS FROM THE #biotrust COMMUNITY</h1>
 
 
 
 
 
-
-           <div class="row d-flex justify-content-center align-items-center">
-
-                <div class="d-flex justify-content-end align-items-end col-6">
-
-                    <img class="bottom-banner-img" src="assets/images/bottom-banner.png" alt="img">
-
-
-                </div>
-
-                <div class="col-6">
-
-                
-                                            <!-- Carousel -->
-                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                             <!-- Carousel -->
+                     <div id="demo" class="carousel slide ">
                         
-                            <!-- The slideshow/carousel -->
-                            <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (8).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (9).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (10).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (8).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (9).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (10).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
 
-                            </div>
-                            <div class="carousel-item">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (11).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (13).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (14).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (10).jpg" alt="Los Angeles" class="d-block w-100">
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (11).jpg" alt="Los Angeles" class="d-block w-100">  
-                                <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                        
-                            <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                            </button>
                         </div>
-                                            
-
+                        <div class="carousel-item">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (11).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (13).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (14).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (10).jpg" alt="Los Angeles" class="d-block w-100">
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (11).jpg" alt="Los Angeles" class="d-block w-100">  
+                            <img class="horizontal-corousal-img" src="assets/images/low_resolution (12).jpg" alt="Los Angeles" class="d-block w-100">
+                        </div>
                     
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+        </div>
+    </div>                                          
+           
 
 
-                </div>
-
-
-           </div>
-
-
-
-
-
-
-                    
+    
                     <hr class="horizontal-seperator">
 
 
 
 
                         <div class="container-fluid my-5 ps-5 ">
-                            <div  class="col-5 ">
+                            <div  class="col-lg-5 col-md-12 col-sm-12">
                                 <h2 class="list-head mb-4">The No-Clump Multi-Collagen Protein Powder</h2>
 
                                 <p class="list-sub-head  mb-0">Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:</p>
@@ -336,41 +354,34 @@
 
 
 
-                    <div class="row p-0">
-                        <div class="d-flex">
-                                
-                                <div class="d-flex flex-column justify-content-center align-items-center col-3 discription border border-white bg-blue text-white">
-                                    <img class="money-back-img" src="assets/images/60-day-money-back-guarantee.png" alt="60-day">
+                <div class="row p-0">
 
-                                    <p>60-DAY MONEY BACK GUARANTEE</p>
-                                
-                                </div>
-                            
-                             
-                                <div class="d-flex flex-column justify-content-center align-items-center col-3 discription border border-white bg-blue text-white">
-                                    <img class="money-back-img" src="assets/images/Complete_-5-Collagen-Protein.png" alt="60-day">
-
-                                    <p>COMPLETE, 5-COLLAGEN PROTEIN</p>
-                                
-                                </div>
-                            
-                             
-                                <div class="d-flex flex-column justify-content-center align-items-center col-3 discription border border-white bg-blue text-white">
-                                    <img class="money-back-img" src="assets/images/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png" alt="60-day">
-
-                                    <p>HORMONE & GLUTEN-FREE & NON-GMO</p>
-                                
-                                </div>
-                            
- 
-                                <div class="d-flex flex-column justify-content-center align-items-center col-3 discription border border-white bg-blue text-white">
-                                    <img class="money-back-img" src="assets/images/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png" alt="60-day">
-
-                                    <p>NEVER CLUMPS</p>
-                                
-                                </div>
-                        </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-3 col-md-3 col-sm-6 discription border border-white bg-blue
+                    text-white w-sm-50 w-md-25">
+                        <img class="money-back-img" src="assets/images/60-day-money-back-guarantee.png" alt="60-day">
+                        <p>60-DAY MONEY BACK GUARANTEE</p>
                     </div>
+                            
+                             
+                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-3 col-md-3 col-sm-6 discription border border-white bg-blue 
+                    text-white w-sm-50  w-md-25">
+                        <img class="money-back-img" src="assets/images/Complete_-5-Collagen-Protein.png" alt="60-day">
+                        <p>COMPLETE, 5-COLLAGEN PROTEIN</p>
+                    </div>
+                            
+                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-3 col-md-3 col-sm-6  discription border border-white bg-blue
+                    text-white w-sm-50  w-md-25">
+                        <img class="money-back-img" src="assets/images/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png" alt="60-day">
+                        <p>HORMONE & GLUTEN-FREE & NON-GMO</p>
+                    </div>
+ 
+                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-3 col-md-3 col-sm-6  discription border border-white bg-blue 
+                    text-white w-sm-50  w-md-25">
+                        <img class="money-back-img" src="assets/images/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png" alt="60-day">
+                        <p>NEVER CLUMPS</p>
+                    </div>
+
+                </div>
 
                    
 
@@ -379,17 +390,17 @@
 
 
 
-        <div class="d-flex flex-row bg-light-dark-blue">
-            <div class="col-4"> 
+        <div class="d-flex flex-lg-row flex-md-row flex-sm-wrap bg-light-dark-blue">
+            <div class="col-lg-4 col-md-4 col-sm-12"> 
                     <p class="featured-review-head text-white">FEATURED CUSTOMER REVIEW</p>
                     <a class="text-decoration-none more-review-link float-end" href="#">Read more reviews</a>
             </div>
 
-            <div class="vertical-seperator-main col-1">
+            <div class="vertical-seperator-main col-lg-1 col-md-1 col-sm-1">
                 <div class="vertical-seperator mt-3"></div>
             </div>
 
-            <div class="col-6 text-center" >
+            <div class="col-lg-6 col-md-6 text-center col-sm-11" >
                 <img class="stars" src="assets/images/featured_review_stars_small.webp">
                 <p class="coffee-text text-white">"I love it! No taste or smell. I put it in my coffee first thing. Cuts my hunger and gives me energy."</p>
                 <p class="author-name text-white">Jacqueline T.</p>
@@ -411,14 +422,14 @@
             </div>
 
             <div class="row">
-                <div class="col-6 text-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                     <iframe class="custom-embed-bottom ratio ratio-20x20"  title="Coaches Tips: Add Multi-Collagen to Your Morning Coffee" alt="Video bottom 1" 
                         src="https://player.vimeo.com/video/296462656?portrait=0&amp;title=0&amp;byline=0&amp;playsinline=0" frameborder="0" 
                         webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-vimeo-tracked="true" data-ready="true">
                     </iframe>
                 </div> 
 
-                <div class="col-6 text-center">
+                <div class="col-lg-6 col-md-6 col-sm-12  text-center">
                     <iframe class="custom-embed-bottom ratio ratio-20x20"   title="Mixability Comparison: BioTRUST Collagen VS 'The Other Collagen'" 
                     alt="Video 2 bottom" 
                     src="https://player.vimeo.com/video/296462747?portrait=0&amp;title=0&amp;byline=0&amp;?playsinline=0" 
@@ -439,6 +450,7 @@
     </div>   
     </body>
 </html>
+
 
 
 
