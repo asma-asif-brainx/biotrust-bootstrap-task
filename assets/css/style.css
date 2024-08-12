@@ -11,62 +11,37 @@
     --red:#DB421D;
 }
 
-
-
-
-
-
-
+/* Main containers styling */
 
 .main{
     background-color: var(--light-grey);
     font-family: Lato, HelveticaNeue, Helvetica Neue, sans-serif;
 }
-
-.nav-link{
-    color: var(--medium-blue);
-}
-
-
 .bg-blue{
     background-color: var(--blue);
 }
 .bg-dark-blue{
     background-color: var(--dark-blue);
 }
-
 .bg-light-dark-blue{
     background-color: var(--light-dark-blue);
 }
 .bg-video{
     background-color: var(--video-blue);
 }
-
 .bd-right-green{
     border-right-color:var(--parrot) ;
     border-width: 3px;
 }
 
 
+/* Nav section bread crumbs */
+.nav-link{
+    color: var(--medium-blue);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-/*  */
-
-
-
-
-
-/* Review fixed div */
+/* Review fixed bar */
 .reviews{
     position: fixed;
     background-color: var(--light-dark-blue);
@@ -75,64 +50,38 @@
     font-weight: normal;
     font-size: 14px;
     width: 120px;
+    max-width: 100%;
     height: 50px;
+    max-height: 100%;
     z-index:100;
 }
 
 
+/* vertical corousal */
 
+.vertical-corousal-img{
+    max-width: 100px;
+    width: 100%;
+    max-height:105px ;
+    height: 100% ; 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* vertical corousal 
- */
-
-  .vertical-corousal-img{
-        width: 100px;
-        height: 105px;
-    
- } 
-
-
-
-
-
- 
-
-
- .watch-btn{
+} 
+.watch-btn{
     font-size: 16px;
-    width: 270px;
-    height: 60px;
+    min-width:  270px;
+    width:100%;
+    min-height: 60px;
+    height: 100%;
     color:var(--light-dark-blue);
     border-color: var(--light-dark-blue);
     border-width: 3px;
     font-weight: 700;
-
 }
-
-
 .watch-btn-section
 {
     position: relative;
     display: inline-block;
 }
-
-
 .watch-btn-section::before
 {
     content: '';
@@ -146,110 +95,113 @@
 }
 
 
-
 /* horizontal-slider */
 
 .horizontal-corousal-img{
-    width: 100px;
-    height: 100px;
+    max-width:73px ;
+    width:100% ;
+    max-height: 73px;
+    height: 100%;
 }
-
 .horizontal-corousal-head{
     color:var(--dark-blue);
     font-size: 16px;
 }
-
 .horizontal-slider{
-    width: 520px;
+    min-width: 520px;
+    width: 100% ;
 }
-
-  
-
-
-
+.horizontal-next::before{
+    transform: translateX(-40px);
+}
+.horizontal-prev::before{
+    transform: translateX(70px);
+}
+.carousel-item{
+    max-width: 99%;
+    width: 100%;
+}
 
 
 /*  zoom image*/
 
 .ageless-head{
-    font-size: 26px;
+    font-size: 25px;
     color: var(--light-dark-blue);
-    font-weight: 500;
+    font-weight: 600;
 }
-
 .review-star{
-    width: 55%;
+    max-width: 55%;
+    width: 100%;
     object-fit: contain;
 }
-
 .ageless-review-link{
     font-size:13px;
 }
 .zoom-section{
-    width: 400px;
-    
+    max-width:400px ;
+    width: 100%; 
 }
 .zoom-img{
-    width:440px; 
-    height:450px;
+    min-width:440px; 
+    width: 100%;
+    min-height:450px;
+    height: 100%;
 }
 
 
-/*  */
+/* Bottom banner image */
 .bottom-banner-img{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 
-
-
-
-
-/* Cards */
-
+/* Package Cards */
 
 .package-head{
     color: var(--package-head-color);
     font-size: 26px;
 }
-
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: var(--light-dark-blue);
-
 }
 .nav-link{
     color: var(--light-dark-blue );
-
 }
 .nav-link:hover {
-       color: var(--light-dark-blue );
-    
+    color: var(--light-dark-blue );
 }
 .tab-one-time-purchase{
-    width: 310px;
-    height: 55px;
+    min-width: 310px;
+    width: 100% ;
+    min-height:55px ;
+    height: 100% ;
     font-size: 18px;
     border: 2px solid var(--light-dark-blue);  
 }
-
 .subscribe-tab{
-    width: 310px;
-    height: 55px;
+    min-width:310px ;
+    width: 100%;
+    min-height: 55px;
+    height: 100%;
     color: var(--light-dark-blue );
     font-size: 18px;
     border: 2px solid var(--light-dark-blue);    
 }
-
-
 .card{
     border-radius: 0;
     border-color:var(--light-dark-blue ) ;
-    width: 190px;
-    height: 270px;
+    min-width: 190px;
+    width: 100%;
+    min-height:270px;
+    height: 100%;
 }
 .card-popular{
-    width: 200px;
-    height: 320px;
+    min-width:200px ;
+    width: 100%;
+    min-height: 320px;
+    height: 100%;
 }
 .card-btn{
     background-color: var(--parrot);
@@ -257,21 +209,23 @@
 .card-head-bg-color{
     background-color: var(--dark-blue);
 }
-
 .card-head-color{
     color:var(--dark-blue);
 }
 .card-head-popular{
-    height:38px;
+    min-height:38px ;
+    height:100%;
     font-size: 20px;
     font-weight: 500;
+    max-width: 100%;
     width: 100%;
 }
-
 .btn-flavor{
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     font-size: 16px;
-    height: 60px;
+    max-height: 60px;
+    height: 100%;
 }
 .num-pack{
     color:var(--parrot);
@@ -282,16 +236,17 @@
     color:var(--red);
     font-size: 24px;
 }
-
 .card-subscribe-one{
-    height: 400px;
+    max-height: 400px;
+    height: 100%;
 }
-
 .card-subscribe-two{
-    height: 360px;
+    max-height: 360px;
+    height: 100%;
 }
 .card-subscribe-three{
-    height: 360px;
+    max-height: 360px;
+    height: 100%;
 }
 .sale-cut{
     font-size:25px;
@@ -306,35 +261,33 @@
     color:var(--dark-blue);
     font-weight: 100;
 }
-
 .package-cards{
-    width: 50%;
+    max-width: 50%;
+    width: 100%;
 }
 
 
-
-
-
 /* Seperator */
+
 .horizontal-seperator{
+    max-width: 100%;
     width: 100%;
     border-top: 5px solid var(--dark-blue);
     opacity: 1;
 }
 
 
-
 /* list */
 
 .list-head{
     Font-size: 20px;
-  Font-style: normal;
-  Font-weight: 500;
+    Font-style: normal;
+    Font-weight: 500;
 }
 .list-sub-head{
     Font-size: 16px;
-  Font-style: normal;
-  Font-weight: 500;
+    Font-style: normal;
+    Font-weight: 500;
 }
 .plus-symbol{
     color:var(--plus-blue);
@@ -347,26 +300,26 @@
 }
 
 
-
 /* Subscription description with logos */
 
 .discription{
-    height: 120px;
-
+    max-height: 120px;
+    height: 100%;
 }
-
 .money-back-img{
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
     transform: translateY(-30px);
 }
 .benefit-cards-text{
-    width:248px;
-    height: 51px;
+    max-width: 248px;
+    width: 100%;
+    min-height: 51px;
+    height: 100%;
     font-weight: normal;
 }
-
-
 
 
 /* Review feedback section */
@@ -376,6 +329,7 @@
     Font-style: normal;
     Font-weight: 500;
     text-align: right;
+    line-height: 1.25;
 }
 .more-review-link{
     Font-size: 22px;
@@ -384,54 +338,59 @@
     color: var(--parrot);
 }
 .vertical-seperator-main{
-    width: 70px;
+    max-width:  70px;
+    width: 100%;
 }
 .vertical-seperator {
     position: relative;
-    width: 9px;
-    height: 85%;
+    max-width: 9px;
+    width: 100%;
+    max-height: 85%;
+    height:100% ;
     background-color: var(--parrot);
     z-index: 55;
     transform: translateX(30px);
-  }  
-  .stars {
-    width: 30%;
-    height: 20%;
+}  
+.stars {
+    max-width:30% ;
+    width: 100%;
+    max-height: 20%;
+    height: 100%;
     object-fit: contain;
-  }
-  .coffee-text{
+}
+.coffee-text{
     Font-size: 24px;
     Font-style: normal;
     Font-weight: 500;
-  }
-  .author-name {
+}
+.author-name {
     Font-size: 24px;
     Font-style: italic;
     Font-weight: 500;
-  }
-  .verified-buyer{
+}
+.verified-buyer{
     Font-size: 24px;
     Font-style: normal;
     Font-weight: 500;
     color: var(--parrot);
-  }
-
+}
 
 
 /* Videos styling */
+
 .custom-embed {
+    min-width: 100%;
     width: 100%; 
-    height: 480px; 
+    min-height:480px ;
+    height: 100%; 
     margin: auto; 
-  }
-  .custom-embed-bottom {
-    width: 85%; 
-    height: 200px; 
-    margin: auto; 
-  }
-
-
-
+}
+.custom-embed-bottom {
+    min-width:  95%;
+    width: 100%; 
+    min-height:190px ;
+    height: 100%; 
+}
 
 
 @media (min-width: 1281px) and (max-width:1300px) {
@@ -440,101 +399,104 @@
 
 @media (max-width: 1024px) {
     .zoom-img{
-        width:320px;
-        height: 300px;
+        min-width: 320px;
+        width:100%;
+        min-height: 300px;
+        height: 100%;
     }
     .package-cards{
-        width: 40%;
+        max-width: 40%;
+        width: 100%;
     }
-
     .tab-one-time-purchase{
-        width: 240px;
-  
+        min-width: 240px;
+        width: 100%;
     }
-    
     .subscribe-tab{
-        width: 240px;   
+        min-width: 240px;
+        width: 100%;
     }
-
     .card{
-        width: 160px;
-        height: 270px;
+        min-width:160px ;
+        width:100% ;
+        min-height: 270px;
+        height: 100%;
     }
     .card-popular{
-        width: 170px;
-        height: 320px;
+        min-width:170px ;
+        width: 100% ;
+        min-height: 320px;
+        height: 100%;
     }
     .btn-flavor{
-        width: 110px;
+        max-width: 110px;
+        width: 100%;
         font-size: 16px;
-        height: 60px;
+        max-height: 60px;
+        height: 100%;
     }
     .bottom-banner-img{
-        width: 300px;
+        max-width: 300px;
+        width: 100%;
     }
-    
 }
-
-
 
 @media (max-width: 980px) {
-
     .w-sm-25 {
-        width: 25%;
+        max-width: 25%;
+        width: 100% ;
     }
-   
-
     .benefit-cards-text{
-        width: 129px;
-        height: 77px;
+        max-width: 129px;
+        width: 100%;
+        max-height: 77px;
+        height: 100%;
     }
-
     .money-back-img {
         transform: translateY(-20px);
-}
+    }
     .featured-review-head {
         Font-size: 36px;
     }
-
     .vertical-seperator{
-        height: 60%;
+        max-height: 60%;
+        height: 100%;
     }
-
     .coffee-text {
         Font-size: 20px;
     }
-
-
-
     .tab-one-time-purchase{
-        width: 165px;
-        height: 65px;
+        min-width: 165px;
+        width: 100%;
+        max-height: 65px;
+        height: 100%;
         font-size: 16px;
     }
-
     .subscribe-tab{
-        width: 165px;
-        height: 65px;
+        min-width: 165px;
+        width: 100%;
+        max-height: 65px;
+        height: 100%;
         font-size: 16px;  
     }
-
-
     .card{
         border-radius: 0;
         border-color:var(--light-dark-blue ) ;
-        width: 360px;
-        height: 100px;
+        min-width: 360px;
+        width: 100%;
+        min-height: 100px;
+        height: 100%;
     }
     .card-popular{
-        width: 360px;
-        height: 100px;
+        max-width:  360px;
+        width: 100%;
+        max-height: 100px;
+        height: 100%;
         border-color:var(--parrot) ;
     }
-
     .cards-package-heads{
         font-size: 22px;
     }
-
     .cards-subscribe-heads{
         font-size: 16px;
     }
@@ -542,20 +504,20 @@
         font-size: 16px;
     }
     .btn-flavor{
-        width: 120px;
+        min-width: 120px;
+        width:100% ;
         font-size: 16px;
-        height: 60px;
+        min-height:60px ;
+        height: 100% ;
     }
-
     .save-percentage{
         font-size: 14px;
     }
-
     .card-subscribe-one{
-        height: 170px;
+        max-height:  170px;
+        height: 100%;
         border-color:var(--parrot) ;
     }
-
     .most-popular-text{
         font-style: italic;
         color: var(--light-dark-blue);
@@ -563,30 +525,30 @@
         font-weight: 700;
     }
     .card-subscribe-two{
-        height: 170px;
-    }
+        max-height:  170px;
+        height: 100%;    }
     .card-subscribe-three{
-        height: 170px;
-    }
+        max-height:  170px;
+        height: 100%;    }
     .sale-cut{
         font-size:25px;
     }
     .save-percentage-subscribe{
-            font-size: 16px;
+        font-size: 16px;
     }
-
     .package-cards{
-        width: 50%;
+        max-width: 50%;
+        width: 100%;
     }
     .vertical-corousal-medium-img{
-        height: 340px;
-        width: 300px;
+        min-height: 340px;
+        height: 100%;
+        min-width: 300px;
+        width: 100%;
     }
-
     .carousel-control-next-icon {
         background-image: none;
     }
-
     .carousel-control-prev-icon {
         background-image: none;
     }
@@ -596,14 +558,12 @@
         color: #cdcdcf;
         font-size: 48px;
     }
-
     .vertical-next:before {
         content: "\f105";
         font-family: FontAwesome;
         color: #cdcdcf;
         font-size: 48px;
     }
-
     .horizontal-next::before{
         content: "\f105";
         font-family: FontAwesome;
@@ -611,7 +571,6 @@
         font-size: 48px;
         font-weight: normal;
     }
-
     .horizontal-prev::before{
         content: "\f104";
         font-family: FontAwesome;
@@ -619,50 +578,64 @@
         font-size: 48px;
         font-weight: normal;
     }
-
+    .ageless-head-mobile{
+        font-size: 22px;
+        color: var(--light-dark-blue);
+        font-weight: 600;
+    }
 }
 
-
-
   @media (max-width: 767px) {
-
     .discription{
-        height: 190px;
-        width: 50%;
+        min-height:190px ;
+        height: 100%;
+        max-width: 50%;
+        width: 100%;
         font-size: 16px;
-    
+    }
+    .ageless-head-mobile{
+        font-size: 16px;
+        color: var(--light-dark-blue);
+        font-weight: 600;
     }
     .benefit-cards-text{
-        width: 170px;
+        max-width: 170px;
+        width: 100%;
         font-weight: normal;
-
     }   
     .vertical-seperator-main{
+        max-width: 100%;
         width:100%;
     } 
     .vertical-seperator {
         position: relative;
-        width: 80%;
-        height: 85%;
+        max-width: 80%;
+        width: 100%;
+        max-height: 85%;
+        height: 100%;
         background-color: var(--parrot);
         z-index: 55;
         transform: translateX(40px) translateY(-30px);
       }  
-
       .featured-head-section{
-        width: 50%;
+        max-width: 50%;
+        width: 100%;
         margin: auto;
       }
       .featured-review-head{
         text-align: center;
       }
       .stars{
-        height: 16%;
+        max-height: 16%;
+        height: 100%;
+      }
+      .featured-card{
+        min-height: 580px;
+        height: 100%;
       }
 
-
-      .featured-card{
-        height: 580px;
+      .custom-embed{
+        width: 100%;
+        max-width: 100%;
       }
 }
-
