@@ -552,6 +552,16 @@
     .carousel-control-prev-icon {
         background-image: none;
     }
+    .carousel-indicators [data-bs-target]{
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(225, 224, 224);
+        transform: translateY(30px);
+    }
+    /* .corousal-indicators .active [data-bs-target]{
+        background-color: var(--light-dark-blue) ;
+    } */
     .vertical-prev:before {
         content: "\f104";
         font-family: FontAwesome;
@@ -638,4 +648,12 @@
         width: 100%;
         max-width: 100%;
       }
+      .custom-embed-bottom{
+        width: 100%;
+        max-width: 100%;
+      }
+      .package-cards{
+        max-width: 400px;
+        width: 100%;
+      };
 }
