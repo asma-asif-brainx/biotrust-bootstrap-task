@@ -651,9 +651,11 @@
       .custom-embed-bottom{
         width: 100%;
         max-width: 100%;
+        transform: translateY(-150px);
       }
       .package-cards{
         max-width: 400px;
         width: 100%;
-      };
+      }
+
 }
