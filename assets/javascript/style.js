@@ -26,3 +26,7 @@ window.onload = function() {
     displayImage('image6'); 
 }
 
+
+
+
+
