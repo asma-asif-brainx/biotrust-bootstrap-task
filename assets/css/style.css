@@ -336,7 +336,7 @@
 }
 
 .tooltip-inner {
-    max-width: 260px !important; 
+    max-width: 310px !important; 
     width: 100%;
     max-height: 400px;
     height: 100%;
@@ -345,6 +345,19 @@
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 } 
+
+.tooltip-head{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'lato' !important;
+}
+.tooltip-text{
+    font-size: 11.2px;
+    font-weight: 400;
+    font-family: 'lato' !important;
+
+}
+
 
 .btn:hover {
     color: white;
