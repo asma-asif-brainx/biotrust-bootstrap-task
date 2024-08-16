@@ -247,10 +247,10 @@
 .ageless-review-link:hover{
     color: #C5DEF0;
 }
-.zoom-section{
+/* .zoom-section{
     max-width:30% ;
     width: 100%; 
-}
+} */
 .zoom-img{
     min-width:440px; 
     width: 100%;
@@ -305,7 +305,7 @@
 .tab-one-time-purchase{
     min-width: 295px;
     width: 100% ;
-    min-height:55px ;
+    max-height:55px ;
     height: 100% ;
     font-size: 18px;
     border: 2px solid var(--light-dark-blue);  
@@ -313,7 +313,7 @@
 .subscribe-tab{
     min-width:290px ;
     width: 100%;
-    min-height: 55px;
+    max-height: 55px;
     height: 100%;
     color: var(--light-dark-blue );
     font-size: 18px;
@@ -332,7 +332,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transform: translate(280px, -90px);
+    transform: translate(280px, -70px);
 }
 
 .tooltip-inner {
@@ -647,6 +647,13 @@
         max-width: 200px;
         width: 100%;
     }
+
+    .horizontal-prev{
+        transform: translateX(50px);
+    }
+    .horizontal-next{
+        transform: translateX(-55px);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -703,7 +710,7 @@
         width: 100%;
     }
     .question-mark-tooltip{
-        transform: translate(220px, -90px);
+        transform: translate(220px, -70px);
     }
 }
 
